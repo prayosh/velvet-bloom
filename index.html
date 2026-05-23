@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velvet Bloom | Jamshedpur's Most Luxurious Ladies Parlour</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..905&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-plum-black text-lavender-white font-sans overflow-x-hidden selection:bg-rose-pink selection:text-plum-black min-h-screen flex flex-col justify-between">
+    
+    <!-- 1. Global Translucent Glass Navigation Bar -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        <!-- Logo Container -->
+        <a href="index.html" class="flex items-center space-x-3 group cursor-pointer" id="nav-logo">
+          <div class="p-1 px-1.5 rounded-full border border-rose-pink/15 group-hover:border-rose-pink/40 bg-purple-black/40 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" class="group-hover:rotate-45 transition-transform duration-700">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" opacity="0.85"/>
+              <path d="M50 35C48 45 40 48 40 55C40 62 48 68 50 75C52 68 60 62 60 55C60 48 52 45 50 35Z" fill="#d4a853" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-lg sm:text-xl font-bold tracking-widest text-[#ffeaba] leading-tight">VELVET BLOOM</span>
+            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-rose-pink -mt-0.5">Bistupur Jamshedpur</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+          <a href="index.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Home</a>
+          <a href="services.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Services</a>
+          <a href="gallery.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Gallery</a>
+          <a href="booking.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Schedule</a>
+          <a href="contact.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Inquire</a>
+        </nav>
+
+        <!-- Right Action Button & Hamburger Toggle -->
+        <div class="flex items-center space-x-4">
+          <a href="booking.html" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-rose-pink text-plum-black hover:bg-gold hover:text-plum-black text-[10px] font-bold tracking-widest uppercase shadow-md transition-all duration-300">
+            Book Session
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" class="md:hidden p-2 text-lavender-white/80 hover:text-rose-pink focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Overlay (Drawer) -->
+      <div id="mobile-menu-drawer" class="fixed inset-0 bg-plum-black/98 z-40 flex flex-col justify-center items-center space-y-8 text-center translate-y-[-100%] transition-transform duration-500 ease-in-out md:hidden">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-lavender-white/60 hover:text-rose-pink cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <a href="index.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Home</a>
+        <a href="services.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Services</a>
+        <a href="gallery.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Gallery</a>
+        <a href="booking.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Book Slot</a>
+        <a href="contact.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Get in Touch</a>
+
+        <a href="booking.html" class="px-8 py-3 bg-rose-pink text-plum-black font-extrabold text-xs uppercase tracking-widest rounded-full shadow-pink-glow mt-4">
+          Quick Schedule
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENT BODY wrapper -->
+    <main class="flex-grow pt-24 sm:pt-28">
+
+      <!-- HERO SECTION -->
+      <section id="hero-main" class="relative overflow-hidden py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-rose-pink/10 min-h-[85vh] flex items-center">
+        <!-- Accent circles -->
+        <div class="absolute right-0 top-1/4 w-80 h-80 bg-rose-pink/5 rounded-full filter blur-[100px] pointer-events-none" />
+        <div class="absolute left-10 bottom-10 w-64 h-64 bg-gold/5 rounded-full filter blur-[80px] pointer-events-none" />
+        
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+          
+          <!-- Column 1: Intro info -->
+          <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left reveal">
+            <span class="px-4 py-1.5 rounded-full bg-rose-pink/10 border border-rose-pink/20 text-xs text-rose-pink font-semibold tracking-widest uppercase inline-block">
+              Exclusive Sanctuary for Bistupur Women
+            </span>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-lavender-white leading-tight">
+              Experience the Epitome of <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-pink to-gold">Royal Indian Elegance</span>
+            </h1>
+            <p class="text-xs sm:text-sm text-lavender-white/70 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+              Skip the noisy waiting queues of Jamshedpur. Velvet Bloom is an unhurried luxury parlour catering exclusively to the modern woman. Re-energize with custom-designed balayages, bio-available facials, and timeless shringar packages in private royal rooms.
+            </p>
+
+            <div class="pt-2 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+              <a href="booking.html" class="px-8 py-4 rounded-full bg-rose-pink hover:bg-gold text-plum-black text-xs uppercase tracking-widest font-extrabold shadow-pink-glow transition-all duration-300 transform hover:scale-105 inline-block">
+                Schedule Royal Slot
+              </a>
+              <a href="services.html" class="px-8 py-4 rounded-full border border-rose-pink/30 hover:border-gold text-lavender-white text-xs uppercase tracking-widest font-bold transition-all duration-300 inline-block">
+                View Curated Services
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Ambient Interactive Vector Representation -->
+          <div class="lg:col-span-5 flex justify-center items-center reveal">
+            <div class="relative w-72 h-72 sm:w-96 sm:h-96 glass-panel rounded-full border border-rose-pink/20 flex items-center justify-center p-6 animate-float shadow-pink-glow">
+              <div class="absolute inset-4 rounded-full border border-gold/10 border-dashed" />
+              <!-- Blooming central art vector -->
+              <div class="w-60 h-60 sm:w-80 sm:h-80 flex items-center justify-center relative">
+                <svg width="220" height="220" viewBox="0 0 100 100" fill="none">
+                  <path d="M50 15C52 35 32 45 32 55C32 68 45 78 50 85C55 78 68 68 68 55C68 45 48 35 50 15Z" fill="#e8a0bf" opacity="0.3"/>
+                  <path d="M50 25C51 40 38 48 38 55C38 62 48 70 50 75C52 70 62 62 62 55C62 48 49 40 50 25Z" fill="#e8a0bf" opacity="0.6"/>
+                  <circle cx="50" cy="55" r="10" fill="#d4a853" opacity="0.8"/>
+                  <!-- Hair line curves -->
+                  <path d="M20 50C35 48 45 52 50 55C55 52 65 48 80 50" stroke="#d4a853" stroke-width="0.75" />
+                  <path d="M25 58C35 55 45 57 50 60C55 57 65 55 75 58" stroke="#e8a0bf" stroke-width="0.5" />
+                </svg>
+                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-plum-black/80 px-4 py-1.5 rounded-full border border-gold/30 text-[9px] text-[#ffeaba] font-mono tracking-widest uppercase">
+                  Est. 2018
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- BRAND PILLARS -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center space-y-3 mb-12 reveal">
+          <span class="text-xs text-gold uppercase tracking-widest font-extrabold">Brand Philosophy</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-lavender-white">Why Patronize Velvet Bloom?</h2>
+          <div class="w-12 h-0.5 bg-rose-pink mx-auto opacity-50" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Block 1 -->
+          <div class="glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-gold/30 transition-all duration-300 flex flex-col items-center text-center space-y-4 reveal">
+            <div class="p-3.5 rounded-xl bg-rose-pink/10 border border-rose-pink/20 text-rose-pink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="font-serif text-base font-bold text-lavender-white">Guaranteed Slots</h3>
+            <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+              We operate exclusively on timing slots. Lock your favorite hours below, and step straight onto your throne without single second queues.
+            </p>
+          </div>
+
+          <!-- Block 2 -->
+          <div class="glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-gold/30 transition-all duration-300 flex flex-col items-center text-center space-y-4 reveal">
+            <div class="p-3.5 rounded-xl bg-rose-pink/10 border border-rose-pink/20 text-rose-pink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="font-serif text-base font-bold text-lavender-white">Women Only Sanctuary</h3>
+            <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+              Enjoy complete peace of mind. Our Bistupur lounge has secure access protocols, creating safe space for relaxed style conversations.
+            </p>
+          </div>
+
+          <!-- Block 3 -->
+          <div class="glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-gold/30 transition-all duration-300 flex flex-col items-center text-center space-y-4 reveal">
+            <div class="p-3.5 rounded-xl bg-rose-pink/10 border border-rose-pink/20 text-rose-pink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <h3 class="font-serif text-base font-bold text-lavender-white">Therapists of Prestige</h3>
+            <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+              No junior apprentices allowed. Our therapists have multiple certifications in international organic cosmetics and custom hair balayages.
+            </p>
+          </div>
+
+          <!-- Block 4 -->
+          <div class="glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-gold/30 transition-all duration-300 flex flex-col items-center text-center space-y-4 reveal">
+            <div class="p-3.5 rounded-xl bg-rose-pink/10 border border-rose-pink/20 text-rose-pink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3 class="font-serif text-base font-bold text-lavender-white">Transparent Invoicing</h3>
+            <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+              Clear estimators shown directly during reservation. Zero high-pressure upselling, surprise taxes, or mandatory cross-product subscriptions.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- STATISTICS SECTION (DYNAMIC OBSERVATION COUNTER) -->
+      <section id="stats-section" class="py-12 bg-purple-black border-y border-rose-pink/5 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          
+          <div class="space-y-1">
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-serif font-black text-rose-pink">
+              <span class="counter-val" data-target="5200">0</span>+
+            </div>
+            <p class="text-[10px] sm:text-xs text-lavender-white/50 tracking-widest uppercase">Happy Patrons</p>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-serif font-black text-gold">
+              <span class="counter-val" data-target="150">0</span>+
+            </div>
+            <p class="text-[10px] sm:text-xs text-lavender-white/50 tracking-widest uppercase">Custom Balayages</p>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-serif font-black text-rose-pink">
+              <span class="counter-val" data-target="8">0</span>+
+            </div>
+            <p class="text-[10px] sm:text-xs text-lavender-white/50 tracking-widest uppercase">Expert Stylists</p>
+          </div>
+
+          <div class="space-y-1">
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-serif font-black text-gold">
+              <span class="counter-val" data-target="99">0</span>%
+            </div>
+            <p class="text-[10px] sm:text-xs text-lavender-white/50 tracking-widest uppercase">Service Score</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL MARQUEE SECTION -->
+      <section class="py-16 overflow-hidden bg-gradient-to-b from-purple-black to-plum-black select-none">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center reveal">
+          <span class="text-xs text-rose-pink uppercase tracking-widest font-extrabold">Patron Reviews</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-lavender-white">What Jamshedpur Ladies Say</h2>
+          <div class="w-12 h-0.5 bg-rose-pink mx-auto mt-1.5 opacity-45" />
+        </div>
+
+        <!-- Marquee infinite loop container -->
+        <div class="relative w-full flex items-center">
+          <!-- Left and right gradient shades -->
+          <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-plum-black to-transparent z-10 pointer-events-none" />
+          <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-plum-black to-transparent z-10 pointer-events-none" />
+
+          <div class="animate-marquee gap-6">
+            <!-- Testimonial 1 -->
+            <div class="w-72 sm:w-85 glass-panel p-6 rounded-2xl border border-rose-pink/10 shrink-0 flex flex-col space-y-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-rose-pink/20 flex items-center justify-center font-serif text-xs text-rose-pink font-semibold border border-rose-pink/30">N</div>
+                <div>
+                  <h4 class="text-xs font-semibold text-lavender-white">Neha Singhal</h4>
+                  <p class="text-[8px] text-gold uppercase tracking-wider">Patron since 2021</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-lavender-white/70 italic font-light leading-relaxed">
+                "The Balayage color correction did wonders on my hair! Extremely unhurried process, Preeti is a brilliant listener."
+              </p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="w-72 sm:w-85 glass-panel p-6 rounded-2xl border border-rose-pink/10 shrink-0 flex flex-col space-y-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-rose-pink/20 flex items-center justify-center font-serif text-xs text-rose-pink font-semibold border border-rose-pink/30">R</div>
+                <div>
+                  <h4 class="text-xs font-semibold text-lavender-white">Ritu Sharma</h4>
+                  <p class="text-[8px] text-gold uppercase tracking-wider">Bridal Patron</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-lavender-white/70 italic font-light leading-relaxed">
+                "Locked my bridal look at Bistupur. Best decision! Free slots meant zero rush or shouting. They gave me pure princess feelings!"
+              </p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="w-72 sm:w-85 glass-panel p-6 rounded-2xl border border-rose-pink/10 shrink-0 flex flex-col space-y-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-rose-pink/20 flex items-center justify-center font-serif text-xs text-rose-pink font-semibold border border-rose-pink/30">P</div>
+                <div>
+                  <h4 class="text-xs font-semibold text-lavender-white">Priya Mahapatra</h4>
+                  <p class="text-[8px] text-gold uppercase tracking-wider">Regular Guest</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-lavender-white/70 italic font-light leading-relaxed">
+                "I travel all the way from Kadma to Bistupur just for their organic Hydro Facial. The skin feels unbelievably glowing."
+              </p>
+            </div>
+
+            <!-- Mirror / Duplicate block to prevent cutting on loop -->
+            <div class="w-72 sm:w-85 glass-panel p-6 rounded-2xl border border-rose-pink/10 shrink-0 flex flex-col space-y-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-rose-pink/20 flex items-center justify-center font-serif text-xs text-rose-pink font-semibold border border-rose-pink/30">N</div>
+                <div>
+                  <h4 class="text-xs font-semibold text-lavender-white">Neha Singhal</h4>
+                  <p class="text-[8px] text-gold uppercase tracking-wider">Patron since 2021</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-lavender-white/70 italic font-light leading-relaxed">
+                "The Balayage color correction did wonders on my hair! Extremely unhurried process, Preeti is a brilliant listener."
+              </p>
+            </div>
+
+            <div class="w-72 sm:w-85 glass-panel p-6 rounded-2xl border border-rose-pink/10 shrink-0 flex flex-col space-y-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-rose-pink/20 flex items-center justify-center font-serif text-xs text-rose-pink font-semibold border border-rose-pink/30">R</div>
+                <div>
+                  <h4 class="text-xs font-semibold text-lavender-white">Ritu Sharma</h4>
+                  <p class="text-[8px] text-gold uppercase tracking-wider">Bridal Patron</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-lavender-white/70 italic font-light leading-relaxed">
+                "Locked my bridal look at Bistupur. Best decision! Free slots meant zero rush or shouting. They gave me pure princess feelings!"
+              </p>
+            </div>
+
+            <div class="w-72 sm:w-85 glass-panel p-6 rounded-2xl border border-rose-pink/10 shrink-0 flex flex-col space-y-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-rose-pink/20 flex items-center justify-center font-serif text-xs text-rose-pink font-semibold border border-rose-pink/30">P</div>
+                <div>
+                  <h4 class="text-xs font-semibold text-lavender-white">Priya Mahapatra</h4>
+                  <p class="text-[8px] text-gold uppercase tracking-wider">Regular Guest</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-lavender-white/70 italic font-light leading-relaxed">
+                "I travel all the way from Kadma to Bistupur just for their organic Hydro Facial. The skin feels unbelievably glowing."
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer SECTION -->
+    <footer class="bg-[#0b050d] border-t border-rose-pink/10 pt-16 pb-12 text-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" />
+            </svg>
+            <span class="font-serif text-lg font-bold text-lavender-white tracking-widest">VELVET BLOOM</span>
+          </div>
+          <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+            Step into Bistupur’s preeminent sanctuary for modern women. Experience unhurried hair transformations, flawless nail couture, bio-active facial masques, and high bridal elegance in private comfort slots.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Explore Rituals</h4>
+          <ul class="space-y-2 text-xs text-lavender-white/70 font-light">
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Signature Hair Coloring</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Luxury Gel Nail Art</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Organic Glowing Facials</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Bridal Grooming Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Timeless Slots</h4>
+          <div class="text-xs text-lavender-white/70 space-y-1.5 font-light">
+            <p>Monday – Saturday: <span class="text-rose-pink">9:00 AM – 8:00 PM</span></p>
+            <p>Sunday Special: <span class="text-rose-pink">10:00 AM – 6:00 PM</span></p>
+            <p class="text-[10px] text-lavender-white/40 italic">Appointments hold guaranteed priority over walk-ins.</p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">HQ Address</h4>
+          <div class="text-xs text-lavender-white/70 space-y-2 font-light">
+            <p>Velvet Bloom Salon, Bistupur Main Road, Near Central Park, Jamshedpur – 831001</p>
+            <p class="hover:text-rose-pink transition-colors"><a href="tel:+919876012345">Call Support: +91 98760 12345</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-rose-pink/5 text-center text-xs text-lavender-white/40 font-light flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>&copy; 2026 Velvet Bloom Salon. Designed with pristine precision.</p>
+        <div class="flex items-center space-x-6 text-[10px] uppercase tracking-wider">
+          <span>Exclusive ladies lounge</span>
+          <span>•</span>
+          <span>Premium Bistupur, Jamshedpur</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/animations.js" type="module"></script>
+
+  </body>
+</html>

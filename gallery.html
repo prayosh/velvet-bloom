@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velvet Gallery | Bistupur's Premium Ladies Lounge</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..905&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-plum-black text-lavender-white font-sans overflow-x-hidden selection:bg-rose-pink selection:text-plum-black min-h-screen flex flex-col justify-between">
+    
+    <!-- Translucent Glass Navigation Bar -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        <!-- Logo Container -->
+        <a href="index.html" class="flex items-center space-x-3 group cursor-pointer">
+          <div class="p-1 px-1.5 rounded-full border border-rose-pink/15 group-hover:border-rose-pink/40 bg-purple-black/40 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" class="group-hover:rotate-45 transition-transform duration-700">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" opacity="0.85"/>
+              <path d="M50 35C48 45 40 48 40 55C40 62 48 68 50 75C52 68 60 62 60 55C60 48 52 45 50 35Z" fill="#d4a853" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-lg sm:text-xl font-bold tracking-widest text-[#ffeaba] leading-tight">VELVET BLOOM</span>
+            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-rose-pink -mt-0.5">Bistupur Jamshedpur</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+          <a href="index.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Home</a>
+          <a href="services.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Services</a>
+          <a href="gallery.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Gallery</a>
+          <a href="booking.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Schedule</a>
+          <a href="contact.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Inquire</a>
+        </nav>
+
+        <!-- Right Action Button & Hamburger Toggle -->
+        <div class="flex items-center space-x-4">
+          <a href="booking.html" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-rose-pink text-plum-black hover:bg-gold hover:text-plum-black text-[10px] font-bold tracking-widest uppercase shadow-md transition-all duration-300">
+            Book Session
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" class="md:hidden p-2 text-lavender-white/80 hover:text-rose-pink focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu-drawer" class="fixed inset-0 bg-plum-black/98 z-40 flex flex-col justify-center items-center space-y-8 text-center translate-y-[-100%] transition-transform duration-500 ease-in-out md:hidden">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-lavender-white/60 hover:text-rose-pink cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <a href="index.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Home</a>
+        <a href="services.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Services</a>
+        <a href="gallery.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Gallery</a>
+        <a href="booking.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Book Slot</a>
+        <a href="contact.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Get in Touch</a>
+
+        <a href="booking.html" class="px-8 py-3 bg-rose-pink text-plum-black font-extrabold text-xs uppercase tracking-widest rounded-full shadow-pink-glow mt-4">
+          Quick Schedule
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENT BODY wrapper -->
+    <main class="flex-grow pt-24 sm:pt-28 pb-16">
+
+      <!-- PAGE HERO -->
+      <section class="relative py-12 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-b from-purple-black to-plum-black border-b border-rose-pink/10 mb-12">
+        <div class="absolute left-1/2 -translate-x-1/2 w-64 h-64 bg-rose-pink/5 rounded-full filter blur-[100px] pointer-events-none" />
+        <div class="max-w-4xl mx-auto flex flex-col items-center space-y-4">
+          <h1 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-lavender-white">
+            The Velvet <span class="text-rose-pink">Shringar Portfolio</span>
+          </h1>
+          <div class="w-16 h-0.5 bg-rose-pink opacity-50" />
+          <p class="text-xs sm:text-sm text-lavender-white/70 max-w-lg font-light">
+            Gaze upon some of our pristine style completions created directly inside our Bistupur lounge rooms. No stock photos utilized.
+          </p>
+        </div>
+      </section>
+
+      <!-- GALLERY BODY SECTION -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Filter Bar -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10" id="filter-wrapper">
+          <button data-filter="all" class="gal-filter-btn px-5 py-2.5 rounded-full border border-rose-pink bg-rose-pink text-plum-black font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Show All Styles
+          </button>
+          <button data-filter="hair" class="gal-filter-btn px-5 py-2.5 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Master Hair Styles
+          </button>
+          <button data-filter="nail" class="gal-filter-btn px-5 py-2.5 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Nail Extension
+          </button>
+          <button data-filter="bridal" class="gal-filter-btn px-5 py-2.5 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Bridal Shringar
+          </button>
+        </div>
+
+        <!-- Bento Grid Portfolio -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+          
+          <!-- Image Card 1: Hair -->
+          <div class="gal-item group relative rounded-2xl overflow-hidden glass-panel border border-rose-pink/10 cursor-pointer shadow-md transform transition-all duration-300" data-cat="hair">
+            <div class="aspect-[4/5] relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-plum-black/90 via-plum-black/20 to-transparent opacity-60 group-hover:opacity-85 transition-opacity z-10" />
+              <!-- Exquisite procedural SVG vectors representing our stylized hair makeover models -->
+              <svg class="absolute inset-0 w-full h-full object-cover bg-gradient-to-br from-[#1b1522] to-[#341d3d] p-8" viewBox="0 0 400 500" fill="none">
+                <!-- Hair flow backdrop curves -->
+                <path d="M100 150 C120 180 180 120 220 240 C260 360 160 420 200 480" stroke="#e8a0bf" stroke-width="2.5" opacity="0.45" />
+                <path d="M140 160 C180 220 230 150 260 280 C290 410 210 440 240 490" stroke="#d4a853" stroke-width="1.5" opacity="0.3" />
+                <path class="animated-hair-path" d="M120 100 C180 150 200 250 180 350 C160 450 120 480 100 500" stroke="#e8a0bf" stroke-width="2" />
+                
+                <text x="50%" y="240" font-family="'Playfair Display', serif" font-weight="bold" font-size="28" fill="#ffeaba" text-anchor="middle" opacity="0.65">Balayage Glow</text>
+                <text x="50%" y="275" font-family="system-ui" font-size="10" fill="#f5eef8" letter-spacing="4" text-anchor="middle" opacity="0.45">FRENCH BLEND</text>
+              </svg>
+            </div>
+            <!-- Interactive details card at bottom -->
+            <div class="absolute bottom-0 left-0 right-0 p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="text-[8px] text-rose-pink font-bold uppercase tracking-widest font-mono">Hair Care Ritual</span>
+              <h3 class="font-serif text-base font-bold text-lavender-white mt-1">Chocolate Toffee Melt</h3>
+              <p class="text-[10px] text-lavender-white/50 font-light mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-350">
+                Created with organic lighteners, styled in loose Bistupur beach waves.
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Card 2: Nail -->
+          <div class="gal-item group relative rounded-2xl overflow-hidden glass-panel border border-rose-pink/10 cursor-pointer shadow-md transform transition-all duration-300" data-cat="nail">
+            <div class="aspect-[4/5] relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-plum-black/90 via-plum-black/20 to-transparent opacity-60 group-hover:opacity-85 transition-opacity z-10" />
+              <svg class="absolute inset-0 w-full h-full object-cover bg-gradient-to-br from-[#1c121f] to-[#2b1836] p-8" viewBox="0 0 400 500" fill="none">
+                <!-- Fine linear nail polygons -->
+                <rect x="120" y="200" width="30" height="90" rx="15" fill="#e8a0bf" stroke="#ffeaba" stroke-width="1.5" opacity="0.4" />
+                <rect x="160" y="160" width="30" height="90" rx="15" fill="#d4a853" stroke="#ffeaba" stroke-width="1.5" opacity="0.75" />
+                <rect x="200" y="170" width="30" height="90" rx="15" fill="#c778a0" stroke="#f5eef8" stroke-width="1.5" opacity="0.5" />
+                <rect x="240" y="210" width="30" height="90" rx="15" fill="#e8a0bf" stroke="#d4a853" stroke-width="1.5" opacity="0.4" />
+                
+                <text x="50%" y="340" font-family="'Playfair Display', serif" font-weight="bold" font-size="28" fill="#e8a0bf" text-anchor="middle" opacity="0.65">Nail Artistry</text>
+                <text x="50%" y="375" font-family="system-ui" font-size="10" fill="#f5eef8" letter-spacing="4" text-anchor="middle" opacity="0.45">CHROME APPLIQUE</text>
+              </svg>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="text-[8px] text-rose-pink font-bold uppercase tracking-widest font-mono">Nail Couture</span>
+              <h3 class="font-serif text-base font-bold text-lavender-white mt-1">Glazed Mirror Mauve</h3>
+              <p class="text-[10px] text-lavender-white/50 font-light mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-350">
+                Premium multi-layered glass gel extensions polished in chrome pink.
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Card 3: Bridal -->
+          <div class="gal-item group relative rounded-2xl overflow-hidden glass-panel border border-rose-pink/10 cursor-pointer shadow-md transform transition-all duration-300" data-cat="bridal">
+            <div class="aspect-[4/5] relative">
+              <div class="absolute inset-0 bg-gradient-to-t from-plum-black/90 via-plum-black/20 to-transparent opacity-60 group-hover:opacity-85 transition-opacity z-10" />
+              <svg class="absolute inset-0 w-full h-full object-cover bg-gradient-to-br from-[#120a1c] to-[#3a1b24] p-8" viewBox="0 0 400 500" fill="none">
+                <!-- Golden mandala art vector -->
+                <circle cx="200" cy="200" r="70" stroke="#d4a853" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
+                <circle cx="200" cy="200" r="50" stroke="#e8a0bf" stroke-width="0.75" />
+                <path d="M200 130 L200 270 M130 200 L270 200" stroke="#d4a853" stroke-width="0.5" opacity="0.4" />
+                
+                <text x="50%" y="330" font-family="'Playfair Display', serif" font-weight="bold" font-size="28" fill="#ffeaba" text-anchor="middle" opacity="0.75">Royal Shringar</text>
+                <text x="50%" y="365" font-family="system-ui" font-size="10" fill="#f5eef8" letter-spacing="4" text-anchor="middle" opacity="0.45">HIGH DEFINITION MAKEUP</text>
+              </svg>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="text-[8px] text-rose-pink font-bold uppercase tracking-widest font-mono">Royal Bridal</span>
+              <h3 class="font-serif text-base font-bold text-lavender-white mt-1">The Queen's Saree Shringar</h3>
+              <p class="text-[10px] text-lavender-white/50 font-light mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-350">
+                Traditional red bindi, fresh Jasmine hair braiding, styled with golden heavy ornaments.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- LIGHTBOX FULLSCREEN DYNAMIC VANILLA MODAL overlay -->
+      <div id="lightbox-modal" class="fixed inset-0 z-50 bg-plum-black/95 flex flex-col items-center justify-center p-4 hidden animate-fade-in select-none">
+        
+        <!-- Close overlay trigger -->
+        <button id="lightbox-close" class="absolute top-6 right-6 p-2.5 rounded-full bg-rose-pink/10 border border-rose-pink/20 text-rose-pink hover:bg-rose-pink hover:text-plum-black transition-colors cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Vector container -->
+        <div class="w-full max-w-xl aspect-[4/5] bg-gradient-to-br from-[#120a1c] to-[#1a1220] rounded-2xl overflow-hidden border border-rose-pink/25 shadow-pink-glow-strong p-6 flex items-center justify-center relative">
+          <div id="lightbox-vector-content" class="w-full h-full flex items-center justify-center">
+            <!-- Dynamically populated via script -->
+          </div>
+        </div>
+
+        <!-- Meta values -->
+        <div class="text-center mt-6 space-y-2 max-w-sm">
+          <span id="lightbox-tag" class="text-[9px] text-gold tracking-widest uppercase font-bold">Category</span>
+          <h2 id="lightbox-title" class="font-serif text-lg font-bold text-lavender-white">Title Name</h2>
+          <p id="lightbox-desc" class="text-xs text-lavender-white/60 font-light">Description placeholder text details.</p>
+          <a href="booking.html" class="inline-block mt-4 px-6 py-2.5 rounded-full bg-rose-pink text-plum-black hover:bg-gold hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-300">
+            Secure This Look Slot
+          </a>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Footer SECTION -->
+    <footer class="bg-[#0b050d] border-t border-rose-pink/10 pt-16 pb-12 text-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" />
+            </svg>
+            <span class="font-serif text-lg font-bold text-lavender-white tracking-widest">VELVET BLOOM</span>
+          </div>
+          <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+            Step into Bistupur’s preeminent sanctuary for modern women. Experience unhurried hair transformations, flawless nail couture, bio-active facial masques, and high bridal elegance in private comfort slots.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Explore Rituals</h4>
+          <ul class="space-y-2 text-xs text-lavender-white/70 font-light">
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Signature Hair Coloring</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Luxury Gel Nail Art</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Organic Glowing Facials</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Bridal Grooming Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Timeless Slots</h4>
+          <div class="text-xs text-lavender-white/70 space-y-1.5 font-light">
+            <p>Monday – Saturday: <span class="text-rose-pink">9:00 AM – 8:00 PM</span></p>
+            <p>Sunday Special: <span class="text-rose-pink">10:00 AM – 6:00 PM</span></p>
+            <p class="text-[10px] text-lavender-white/40 italic">Appointments hold guaranteed priority over walk-ins.</p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">HQ Address</h4>
+          <div class="text-xs text-lavender-white/70 space-y-2 font-light">
+            <p>Velvet Bloom Salon, Bistupur Main Road, Near Central Park, Jamshedpur – 831001</p>
+            <p class="hover:text-rose-pink transition-colors"><a href="tel:+919876012345">Call Support: +91 98760 12345</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-rose-pink/5 text-center text-xs text-lavender-white/40 font-light flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>&copy; 2026 Velvet Bloom Salon. Designed with pristine precision.</p>
+        <div class="flex items-center space-x-6 text-[10px] uppercase tracking-wider">
+          <span>Exclusive ladies lounge</span>
+          <span>•</span>
+          <span>Premium Bistupur, Jamshedpur</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/animations.js" type="module"></script>
+
+    <!-- Custom portfolio filter and lightbox scripts -->
+    <script type="module">
+      const filterButtons = document.querySelectorAll('.gal-filter-btn');
+      const items = document.querySelectorAll('.gal-item');
+      
+      const modal = document.getElementById('lightbox-modal');
+      const closeBtn = document.getElementById('lightbox-close');
+      const modalTag = document.getElementById('lightbox-tag');
+      const modalTitle = document.getElementById('lightbox-title');
+      const modalDesc = document.getElementById('lightbox-desc');
+      const modalVector = document.getElementById('lightbox-vector-content');
+
+      // Filtering Handler
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => {
+            b.className = 'gal-filter-btn px-5 py-2.5 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300';
+          });
+          btn.className = 'gal-filter-btn px-5 py-2.5 rounded-full border border-rose-pink bg-rose-pink text-plum-black font-semibold text-xs tracking-wider uppercase transition-all duration-300';
+
+          const cat = btn.getAttribute('data-filter');
+          items.forEach(it => {
+            const itCat = it.getAttribute('data-cat');
+            if (cat === 'all' || itCat === cat) {
+              it.style.display = 'block';
+              setTimeout(() => {
+                it.style.opacity = '1';
+                it.style.transform = 'scale(1)';
+              }, 50);
+            } else {
+              it.style.opacity = '0';
+              it.style.transform = 'scale(0.95)';
+              setTimeout(() => {
+                it.style.display = 'none';
+              }, 200);
+            }
+          });
+        });
+      });
+
+      // Lightbox Trigger Handler
+      items.forEach(it => {
+        it.addEventListener('click', () => {
+          const title = it.querySelector('h3').textContent;
+          const tag = it.querySelector('span').textContent;
+          const desc = it.querySelector('p').textContent;
+          const originalSvg = it.querySelector('svg').cloneNode(true);
+
+          if (modal && modalTag && modalTitle && modalDesc && modalVector) {
+            modalTag.textContent = tag;
+            modalTitle.textContent = title;
+            modalDesc.textContent = desc;
+            modalVector.innerHTML = '';
+            
+            // Inject cloned svg vector and styles appropriately
+            originalSvg.classList.remove('p-8');
+            originalSvg.classList.add('w-full', 'h-full', 'max-w-md', 'max-h-md');
+            modalVector.appendChild(originalSvg);
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      if (closeBtn && modal) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+          document.body.style.overflow = '';
+        });
+        
+        // click outside the vector content box to close
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>

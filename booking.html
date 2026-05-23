@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve Your Slot | Velvet Bloom Salon Jamshedpur</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..905&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-plum-black text-lavender-white font-sans overflow-x-hidden selection:bg-rose-pink selection:text-plum-black min-h-screen flex flex-col justify-between select-none">
+    
+    <!-- Translucent Glass Navigation Bar -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        <!-- Logo Container -->
+        <a href="index.html" class="flex items-center space-x-3 group cursor-pointer">
+          <div class="p-1 px-1.5 rounded-full border border-rose-pink/15 group-hover:border-rose-pink/40 bg-purple-black/40 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" class="group-hover:rotate-45 transition-transform duration-700">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" opacity="0.85"/>
+              <path d="M50 35C48 45 40 48 40 55C40 62 48 68 50 75C52 68 60 62 60 55C60 48 52 45 50 35Z" fill="#d4a853" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-lg sm:text-xl font-bold tracking-widest text-[#ffeaba] leading-tight">VELVET BLOOM</span>
+            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-rose-pink -mt-0.5">Bistupur Jamshedpur</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+          <a href="index.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Home</a>
+          <a href="services.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Services</a>
+          <a href="gallery.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Gallery</a>
+          <a href="booking.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Schedule</a>
+          <a href="contact.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Inquire</a>
+        </nav>
+
+        <!-- Right Action Button & Hamburger Toggle -->
+        <div class="flex items-center space-x-4">
+          <a href="booking.html" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-rose-pink text-plum-black hover:bg-gold hover:text-plum-black text-[10px] font-bold tracking-widest uppercase shadow-md transition-all duration-300">
+            Book Session
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" class="md:hidden p-2 text-lavender-white/80 hover:text-rose-pink focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu-drawer" class="fixed inset-0 bg-plum-black/98 z-40 flex flex-col justify-center items-center space-y-8 text-center translate-y-[-100%] transition-transform duration-500 ease-in-out md:hidden">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-lavender-white/60 hover:text-rose-pink cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <a href="index.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Home</a>
+        <a href="services.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Services</a>
+        <a href="gallery.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Gallery</a>
+        <a href="booking.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Book Slot</a>
+        <a href="contact.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Get in Touch</a>
+
+        <a href="booking.html" class="px-8 py-3 bg-rose-pink text-plum-black font-extrabold text-xs uppercase tracking-widest rounded-full shadow-pink-glow mt-4">
+          Quick Schedule
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENT BODY wrapper -->
+    <main class="flex-grow pt-24 sm:pt-28 pb-16">
+
+      <!-- PAGE HERO -->
+      <section class="relative py-8 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-b from-purple-black to-plum-black border-b border-rose-pink/10 mb-10">
+        <div class="absolute right-0 top-0 w-64 h-64 bg-rose-pink/5 rounded-full filter blur-[80px] pointer-events-none" />
+        <div class="max-w-4xl mx-auto flex flex-col items-center space-y-4">
+          <h1 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-lavender-white">
+            Schedule Your <span class="text-rose-pink">Sanctuary Slot</span>
+          </h1>
+          <div class="w-16 h-0.5 bg-rose-pink opacity-50" />
+          <p class="text-xs sm:text-sm text-lavender-white/70 max-w-lg font-light">
+            Enjoy full lady pampering, zero waiting lines. Complete these three quick steps below to lock your Bistupur salon session.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTIONS CONTAINER grid layout -->
+      <section class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- LEFT 8 COLUMNS: INTERACTIVE STEPS BLOCK -->
+          <div class="lg:col-span-8 flex flex-col space-y-6">
+            
+            <!-- BOOKING ACTIVE FORM PANEL -->
+            <div id="booking-form-wrapper" class="space-y-6">
+              
+              <!-- Progress indicator bar -->
+              <div class="glass-panel p-4 rounded-xl flex items-center justify-between border border-rose-pink/10">
+                <div class="flex items-center space-x-2 w-full">
+                  
+                  <div class="flex items-center space-x-2">
+                    <div data-indicator="1" class="step-indicator w-7 h-7 rounded-full flex items-center justify-center font-sans text-xs font-semibold bg-rose-pink text-plum-black shadow-pink-glow">
+                      1
+                    </div>
+                    <span id="step-text-1" class="text-[10px] sm:text-xs font-medium uppercase tracking-wider hidden sm:inline text-rose-pink font-semibold">
+                      Select Service
+                    </span>
+                  </div>
+                  
+                  <div data-divider="1" class="step-divider height-[2px] h-[2px] grow rounded-full transition-colors duration-300 bg-[#291e30]" />
+
+                  <div class="flex items-center space-x-2">
+                    <div data-indicator="2" class="step-indicator w-7 h-7 rounded-full flex items-center justify-center font-sans text-xs font-semibold bg-[#291e30] text-lavender-white/50 border border-rose-pink/10">
+                      2
+                    </div>
+                    <span id="step-text-2" class="text-[10px] sm:text-xs font-medium uppercase tracking-wider hidden sm:inline text-lavender-white/40">
+                      Pick Date &amp; Time
+                    </span>
+                  </div>
+
+                  <div data-divider="2" class="step-divider height-[2px] h-[2px] grow rounded-full transition-colors duration-300 bg-[#291e30]" />
+
+                  <div class="flex items-center space-x-2">
+                    <div data-indicator="3" class="step-indicator w-7 h-7 rounded-full flex items-center justify-center font-sans text-xs font-semibold bg-[#291e30] text-lavender-white/50 border border-rose-pink/10">
+                      3
+                    </div>
+                    <span id="step-text-3" class="text-[10px] sm:text-xs font-medium uppercase tracking-wider hidden sm:inline text-lavender-white/40">
+                      Your Details
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- CORE FORM VIEWS -->
+              <div class="glass-panel p-6 rounded-2xl border border-rose-pink/12 flex flex-col min-h-[400px]">
+                
+                <!-- Error Banner element (default hidden) -->
+                <div id="error-banner" class="mb-5 p-3.5 rounded-lg bg-red-500/10 border border-red-500/30 text-red-100 flex items-center gap-3 text-xs hidden animate-fade-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-red-400 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  <span id="error-text">Please make valid choices to proceed.</span>
+                </div>
+
+                <!-- STEP 1: SELECT RITUALS (DYNAMIZED via JS) -->
+                <div data-step="1" class="step-section flex flex-col space-y-4">
+                  <div>
+                    <h3 class="font-serif text-lg font-bold text-rose-pink">Step 1: Select Your Pamper Ritual</h3>
+                    <p class="text-xs text-lavender-white/60 mt-1">Please select from our curated menu of hair care, nail art, facial masks &amp; makeup:</p>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[350px] overflow-y-auto pr-1" id="services-grid-wrapper">
+                    <!-- Javascript populates standard treatment buttons here automatically -->
+                    <div class="p-6 text-center text-xs text-lavender-white/40 col-span-2">Loading Velvet menu...</div>
+                  </div>
+                </div>
+
+                <!-- STEP 2: SELECT CALENDAR DATE & TIME SLOTS -->
+                <div data-step="2" class="step-section flex flex-col space-y-6 hidden">
+                  <div>
+                    <h3 class="font-serif text-lg font-bold text-rose-pink">Step 2: Reserve Slot &amp; Date</h3>
+                    <p class="text-xs text-lavender-white/60 mt-1">Select your preferred date &amp; one of our vacant hour positions:</p>
+                  </div>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-4">
+                    <!-- Left Picker -->
+                    <div class="flex flex-col space-y-2">
+                      <label class="text-xs text-gold uppercase tracking-wider font-semibold">Appointment Date</label>
+                      <input 
+                        type="date"
+                        id="booking-date"
+                        class="w-full bg-[#1e1424] border border-rose-pink/20 rounded-xl p-3 text-xs text-lavender-white focus:outline-none focus:border-rose-pink tracking-wider cursor-pointer"
+                      />
+                      <p class="text-[10px] text-lavender-white/40 italic">Appointments can be selected up to 30 days in advance.</p>
+                    </div>
+
+                    <!-- Right Illustration decorative -->
+                    <div class="hidden md:flex justify-center items-center">
+                      <svg width="150" height="150" viewBox="0 0 100 100" class="animate-float">
+                        <rect x="15" y="20" width="70" height="65" rx="10" fill="none" stroke="#e8a0bf" stroke-width="2" />
+                        <line x1="15" y1="38" x2="85" y2="38" stroke="#e8a0bf" stroke-width="2" />
+                        <circle cx="30" cy="50" r="4" fill="#d4a853" />
+                        <circle cx="50" cy="50" r="4" fill="#ffeaba" />
+                        <circle cx="70" cy="50" r="4" fill="#d4a853" />
+                        <circle cx="30" cy="65" r="4" fill="#ffeaba" />
+                        <circle cx="50" cy="65" r="4" fill="#d4a853" />
+                        <circle cx="70" cy="65" r="4" fill="#e8a0bf" class="animate-pulse" />
+                        <path d="M35 12 L35 22 M65 12 L65 22" stroke="#d4a853" stroke-width="3" stroke-linecap="round" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Available Hours Grid -->
+                  <div class="flex flex-col space-y-3">
+                    <label class="text-xs text-gold uppercase tracking-wider font-semibold">Available Hours (Bistupur Desk)</label>
+                    
+                    <div class="grid grid-cols-3 sm:grid-cols-5 gap-3">
+                      <button data-time="09:00 AM" class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#211729] hover:bg-rose-pink/5 border border-rose-pink/15 text-lavender-white/80">09:00 AM</button>
+                      <button data-time="10:30 AM" class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#211729] hover:bg-rose-pink/5 border border-rose-pink/15 text-lavender-white/80">10:30 AM</button>
+                      <button data-time="12:00 PM" disabled class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#1b1420] text-lavender-white/20 border border-rose-pink/5 cursor-not-allowed line-through">12:00 PM</button>
+                      <button data-time="01:30 PM" class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#211729] hover:bg-rose-pink/5 border border-rose-pink/15 text-lavender-white/80">01:30 PM</button>
+                      <button data-time="03:00 PM" class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#211729] hover:bg-rose-pink/5 border border-rose-pink/15 text-lavender-white/80">03:00 PM</button>
+                      <button data-time="04:30 PM" class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#211729] hover:bg-rose-pink/5 border border-rose-pink/15 text-lavender-white/80">04:30 PM</button>
+                      <button data-time="06:00 PM" class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#211729] hover:bg-rose-pink/5 border border-rose-pink/15 text-lavender-white/80">06:00 PM</button>
+                      <button data-time="07:30 PM" disabled class="slot-btn py-2 px-3 rounded-lg text-xs font-mono font-medium transition-all duration-150 bg-[#1b1420] text-lavender-white/20 border border-rose-pink/5 cursor-not-allowed line-through">07:30 PM</button>
+                    </div>
+
+                    <div class="flex items-center gap-4 text-[10px] text-lavender-white/50 pt-2 font-light">
+                      <div class="flex items-center gap-1">
+                        <div class="w-2.5 h-2.5 bg-[#211729] border border-rose-pink/15 rounded-sm" />
+                        <span>Vacant Slot</span>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <div class="w-2.5 h-2.5 bg-[#1b1420] border border-rose-pink/5 rounded-sm line-through" />
+                        <span>Booked (Unavailable)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- STEP 3: CONTACT COORDINATES -->
+                <div data-step="3" class="step-section flex flex-col space-y-4 hidden">
+                  <div>
+                    <h3 class="font-serif text-lg font-bold text-rose-pink">Step 3: Personal Details</h3>
+                    <p class="text-xs text-lavender-white/60 mt-1">Please enter your basic coordinates to file the reservation voucher:</p>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    
+                    <div class="flex flex-col space-y-1">
+                      <span class="text-[10px] tracking-wider text-gold font-bold uppercase">Your Full Name *</span>
+                      <input
+                        type="text"
+                        id="patron-name"
+                        placeholder="e.g. Priya Sharma"
+                        class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl py-3 px-4 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                      />
+                    </div>
+
+                    <div class="flex flex-col space-y-1">
+                      <span class="text-[10px] tracking-wider text-gold font-bold uppercase">Mobile Number *</span>
+                      <input
+                        type="tel"
+                        id="patron-phone"
+                        placeholder="e.g. +91 98760 12345"
+                        class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl py-3 px-4 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                      />
+                    </div>
+
+                    <div class="flex flex-col space-y-1 sm:col-span-2">
+                      <span class="text-[10px] tracking-wider text-gold font-bold uppercase">Email Address (Optional)</span>
+                      <input
+                        type="email"
+                        id="patron-email"
+                        placeholder="hello@example.com"
+                        class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl py-3 px-4 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                      />
+                    </div>
+
+                    <div class="flex flex-col space-y-1 sm:col-span-2">
+                      <span class="text-[10px] tracking-wider text-gold font-bold uppercase">Styling Notes / Requests</span>
+                      <textarea
+                        id="patron-notes"
+                        placeholder="e.g. Requesting therapist Preeti, hair balayage custom shades..."
+                        rows="3"
+                        class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl py-3 px-4 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                      ></textarea>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- NAVIGATION TOGGLES at bottom -->
+                <div class="mt-auto pt-6 border-t border-rose-pink/5 flex items-center justify-between gap-4">
+                  <button id="prev-btn" class="px-5 py-3 rounded-full border border-rose-pink/20 text-rose-pink hover:bg-rose-pink/5 text-[11px] font-sans tracking-[0.1em] uppercase font-semibold flex items-center justify-center gap-1.5 opacity-0 pointer-events-none transition-all duration-300">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Back
+                  </button>
+
+                  <button id="next-btn" class="px-6 py-3 rounded-full bg-rose-pink text-plum-black hover:bg-gold transition-colors text-[11px] font-sans tracking-[0.12em] uppercase font-semibold flex items-center justify-center gap-1.5 ml-auto">
+                    Next Step
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+
+                  <button id="lock-btn" class="px-8 py-3 rounded-full bg-rose-pink text-plum-black hover:bg-gold transition-colors text-[11px] font-sans tracking-[0.12em] uppercase font-bold flex items-center justify-center gap-1.5 ml-auto shadow-md btn-glow-pink hidden">
+                    Lock Reservation
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- CONFIRMATION SUCCESS VIEW -->
+            <div id="success-section" class="glass-panel p-8 rounded-2xl border border-rose-pink/20 text-center flex flex-col items-center space-y-6 shadow-pink-glow-strong hidden">
+              
+              <!-- Blooming central art rose -->
+              <div class="w-24 h-24 flex items-center justify-center">
+                <div class="p-4 rounded-full bg-rose-pink/10 border border-gold/30">
+                  <svg width="56" height="56" viewBox="0 0 100 100" fill="none" class="animate-bounce">
+                    <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <span class="text-gold text-xs tracking-widest uppercase font-bold block">Appointment Confirmed</span>
+                <h2 class="font-serif text-2xl sm:text-3xl font-bold text-lavender-white">Your Throne Awaits</h2>
+                <p class="text-xs text-lavender-white/70 max-w-md mx-auto leading-relaxed">
+                  Thank you, <span class="text-rose-pink font-semibold" id="success-patron">Patron</span>! Your exclusive session is securely reserved for <span class="text-[#ffeaba] font-semibold" id="success-date">Date</span> at <span class="text-rose-pink font-semibold" id="success-time">Time</span>. See you at Bistupur!
+                </p>
+              </div>
+
+              <!-- Information summary voucher -->
+              <div class="bg-[#0e0712]/80 border border-rose-pink/15 rounded-xl p-5 w-full max-w-sm space-y-3">
+                <div class="flex justify-between text-xs">
+                  <span class="text-lavender-white/60">Reference Code:</span>
+                  <span class="text-gold font-mono font-bold tracking-wider" id="success-ref-code">VB-######</span>
+                </div>
+                <div class="flex justify-between text-xs">
+                  <span class="text-lavender-white/60">Selected Ritual:</span>
+                  <span class="text-rose-pink font-medium" id="success-service">Service Name</span>
+                </div>
+                <div class="flex justify-between text-xs pt-2 border-t border-rose-pink/5">
+                  <span class="text-lavender-white/60">Pricing Total:</span>
+                  <span class="text-gold font-serif font-bold" id="success-price">₹0</span>
+                </div>
+              </div>
+
+              <div class="pt-4 flex flex-col sm:flex-row gap-3 w-full max-w-xs">
+                <button
+                  id="done-reset-btn"
+                  class="w-full py-3 bg-[#e8a0bf] hover:bg-[#d4a853] text-plum-black font-semibold text-xs uppercase tracking-widest rounded-full transition-colors duration-300"
+                >
+                  Done &amp; Exit
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- RIGHT 4 COLUMNS: LIVE BOOKING SUMMARY CARD -->
+          <div class="lg:col-span-4 lg:sticky lg:top-24">
+            <div class="glass-panel p-6 rounded-2xl border border-rose-pink/10 shadow-pink-glow space-y-6">
+              
+              <div class="border-b border-rose-pink/10 pb-4">
+                <h3 class="font-serif text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold to-rose-pink flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-gold w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                  Your Pamper Voucher
+                </h3>
+                <p class="text-[10px] text-lavender-white/50 uppercase tracking-widest mt-0.5">Real-time Summary</p>
+              </div>
+
+              <!-- SERVICE Selected Details -->
+              <div class="space-y-4">
+                
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-full bg-rose-pink/10 border border-rose-pink/20 flex items-center justify-center text-rose-pink mt-0.5 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                  </div>
+                  <div class="space-y-0.5 w-full">
+                    <span class="text-[9px] text-[#ffeaba] uppercase tracking-wider block">Chosen Ritual</span>
+                    
+                    <div id="summary-service-placeholder" class="text-xs text-lavender-white/40 italic">No luxury service selected yet</div>
+                    
+                    <div id="summary-service-detail" class="hidden">
+                      <p class="text-xs font-semibold text-lavender-white" id="summary-service">French Balayage</p>
+                      <p class="text-[10px] text-lavender-white/60" id="summary-category">Category: Hair</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Schedule Selected Row -->
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-full bg-rose-pink/10 border border-rose-pink/20 flex items-center justify-center text-rose-pink mt-0.5 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-4 h-4"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  </div>
+                  <div class="space-y-0.5 w-full">
+                    <span class="text-[9px] text-[#ffeaba] uppercase tracking-wider block">Schedule</span>
+                    
+                    <div id="summary-schedule-placeholder" class="text-xs text-lavender-white/40 italic">Waiting for Date &amp; Hours</div>
+                    
+                    <div id="summary-schedule-detail" class="hidden">
+                      <p class="text-xs font-semibold text-lavender-white" id="summary-date">Appointment Date</p>
+                      <p class="text-[10px] text-lavender-white/60" id="summary-time">Selected Time: Hour</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Patron Selected row -->
+                <div id="summary-patron-row" class="flex items-start gap-3 border-t border-rose-pink/5 pt-4 hidden">
+                  <div class="w-8 h-8 rounded-full bg-rose-pink/10 border border-rose-pink/20 flex items-center justify-center text-rose-pink mt-0.5 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </div>
+                  <div class="space-y-0.5 w-full">
+                    <span class="text-[9px] text-[#ffeaba] uppercase tracking-wider block">Patron</span>
+                    <p class="text-xs font-semibold text-lavender-white" id="summary-patron">Patron Name</p>
+                    <p class="text-[10px] text-lavender-white/60" id="summary-phone">+91 98760 #####</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- ESTIMATED price total block -->
+              <div class="pt-4 border-t border-rose-pink/15 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#ffeaba] font-light">Estimation Price</span>
+                  <span class="text-[8px] text-lavender-white/30 block tracking-wide uppercase mt-0.5">Exclusive of Tax</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-xl font-serif font-black text-rose-pink block" id="summary-price">
+                    ₹0
+                  </span>
+                  <span class="text-[9px] font-mono text-gold/80 block" id="summary-duration">
+                    —
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer SECTION -->
+    <footer class="bg-[#0b050d] border-t border-rose-pink/10 pt-16 pb-12 text-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" />
+            </svg>
+            <span class="font-serif text-lg font-bold text-lavender-white tracking-widest">VELVET BLOOM</span>
+          </div>
+          <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+            Step into Bistupur’s preeminent sanctuary for modern women. Experience unhurried hair transformations, flawless nail couture, bio-active facial masques, and high bridal elegance in private comfort slots.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Explore Rituals</h4>
+          <ul class="space-y-2 text-xs text-lavender-white/70 font-light">
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Signature Hair Coloring</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Luxury Gel Nail Art</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Organic Glowing Facials</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Bridal Grooming Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Timeless Slots</h4>
+          <div class="text-xs text-lavender-white/70 space-y-1.5 font-light">
+            <p>Monday – Saturday: <span class="text-rose-pink">9:00 AM – 8:00 PM</span></p>
+            <p>Sunday Special: <span class="text-rose-pink">10:00 AM – 6:00 PM</span></p>
+            <p class="text-[10px] text-lavender-white/40 italic">Appointments hold guaranteed priority over walk-ins.</p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">HQ Address</h4>
+          <div class="text-xs text-lavender-white/70 space-y-2 font-light">
+            <p>Velvet Bloom Salon, Bistupur Main Road, Near Central Park, Jamshedpur – 831001</p>
+            <p class="hover:text-rose-pink transition-colors"><a href="tel:+919876012345">Call Support: +91 98760 12345</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-rose-pink/5 text-center text-xs text-lavender-white/40 font-light flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>&copy; 2026 Velvet Bloom Salon. Designed with pristine precision.</p>
+        <div class="flex items-center space-x-6 text-[10px] uppercase tracking-wider">
+          <span>Exclusive ladies lounge</span>
+          <span>•</span>
+          <span>Premium Bistupur, Jamshedpur</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/animations.js" type="module"></script>
+    <script src="/src/booking.js" type="module"></script>
+
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Velvet Bloom Salon",
+  "description": "Luxurious ladies beauty salon and spa sanctuary in Bistupur, Jamshedpur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

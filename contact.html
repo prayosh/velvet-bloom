@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get In Touch | Velvet Bloom Salon Jamshedpur</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..905&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-plum-black text-lavender-white font-sans overflow-x-hidden selection:bg-rose-pink selection:text-plum-black min-h-screen flex flex-col justify-between select-none">
+    
+    <!-- Translucent Glass Navigation Bar -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        <!-- Logo Container -->
+        <a href="index.html" class="flex items-center space-x-3 group cursor-pointer">
+          <div class="p-1 px-1.5 rounded-full border border-rose-pink/15 group-hover:border-rose-pink/40 bg-purple-black/40 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" class="group-hover:rotate-45 transition-transform duration-700">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" opacity="0.85"/>
+              <path d="M50 35C48 45 40 48 40 55C40 62 48 68 50 75C52 68 60 62 60 55C60 48 52 45 50 35Z" fill="#d4a853" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-lg sm:text-xl font-bold tracking-widest text-[#ffeaba] leading-tight">VELVET BLOOM</span>
+            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-rose-pink -mt-0.5">Bistupur Jamshedpur</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+          <a href="index.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Home</a>
+          <a href="services.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Services</a>
+          <a href="gallery.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Gallery</a>
+          <a href="booking.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Schedule</a>
+          <a href="contact.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Inquire</a>
+        </nav>
+
+        <!-- Right Action Button & Hamburger Toggle -->
+        <div class="flex items-center space-x-4">
+          <a href="booking.html" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-rose-pink text-plum-black hover:bg-gold hover:text-plum-black text-[10px] font-bold tracking-widest uppercase shadow-md transition-all duration-300">
+            Book Session
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" class="md:hidden p-2 text-lavender-white/80 hover:text-rose-pink focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu-drawer" class="fixed inset-0 bg-plum-black/98 z-40 flex flex-col justify-center items-center space-y-8 text-center translate-y-[-100%] transition-transform duration-500 ease-in-out md:hidden">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-lavender-white/60 hover:text-rose-pink cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <a href="index.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Home</a>
+        <a href="services.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Services</a>
+        <a href="gallery.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Gallery</a>
+        <a href="booking.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Book Slot</a>
+        <a href="contact.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Get in Touch</a>
+
+        <a href="booking.html" class="px-8 py-3 bg-rose-pink text-plum-black font-extrabold text-xs uppercase tracking-widest rounded-full shadow-pink-glow mt-4">
+          Quick Schedule
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENT BODY wrapper -->
+    <main class="flex-grow pt-24 sm:pt-28 pb-16">
+
+      <!-- PAGE HERO -->
+      <section class="relative py-8 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-b from-purple-black to-plum-black border-b border-rose-pink/10 mb-10">
+        <div class="absolute left-1/2 -translate-x-1/2 -translate-y-12 w-72 h-72 bg-rose-pink/5 rounded-full filter blur-[100px] pointer-events-none" />
+        <div class="max-w-4xl mx-auto flex flex-col items-center space-y-4">
+          <h1 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-lavender-white">
+            Get In <span class="text-rose-pink">Serene Touch</span>
+          </h1>
+          <div class="w-16 h-0.5 bg-rose-pink opacity-50" />
+          <p class="text-xs sm:text-sm text-lavender-white/70 max-w-lg font-light">
+            We love hearing from our beautiful patrons. Have custom bridal enquiries, booking concerns, or looking to schedule a bulk spa party? Write or visit us.
+          </p>
+        </div>
+      </section>
+
+      <!-- TWO-COLUMN LAYOUT -->
+      <section class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- LEFT: Dynamic Message Form -->
+          <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-2xl border border-rose-pink/10 shadow-pink-glow">
+            
+            <!-- Success Stage (Hidden by default) -->
+            <div id="contact-success" class="text-center py-10 space-y-4 hidden animate-scale-up">
+              <div class="w-12 h-12 rounded-full bg-rose-pink/10 border border-gold flex items-center justify-center text-gold mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-rose-pink">Message Filed Successfully</h3>
+              <p class="text-xs text-lavender-white/70 max-w-sm mx-auto leading-relaxed">
+                Thank you, <span class="text-gold font-medium" id="success-patron-name">Patron</span>! Our salon desk will review your details concerning <span class="text-rose-pink font-medium" id="success-subject">#Subject</span> and reach out to you within 2-4 hours.
+              </p>
+              <button
+                id="reset-form-btn"
+                class="px-6 py-2.5 rounded-full bg-rose-pink text-plum-black font-semibold text-xs uppercase tracking-widest hover:bg-gold transition-colors duration-300 transform hover:scale-105"
+              >
+                Write Another Response
+              </button>
+            </div>
+
+            <!-- Form Stage -->
+            <div id="contact-form" class="space-y-4">
+              <div class="border-b border-rose-pink/5 pb-2">
+                <h2 class="font-serif text-lg font-bold text-[#f5eef8] tracking-wide">Write to Velvet Bloom Desk</h2>
+                <p class="text-[10px] text-lavender-white/50 uppercase tracking-widest">Typical response time: Under 2 hours</p>
+              </div>
+
+              <!-- Error Box wrapper -->
+              <div id="contact-error" class="p-3 bg-red-500/10 border border-red-500/20 text-red-200 rounded-lg text-xs flex items-center gap-2 hidden animate-fade-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="text-red-400 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                <span id="contact-error-text">Please write your core coordinates.</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="flex flex-col space-y-1">
+                  <label class="text-[10px] tracking-wider uppercase text-gold font-semibold">Your Name *</label>
+                  <input 
+                    type="text"
+                    id="con-name"
+                    placeholder="e.g. Ritika Sen"
+                    class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl p-3 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                  />
+                </div>
+
+                <div class="flex flex-col space-y-1">
+                  <label class="text-[10px] tracking-wider uppercase text-gold font-semibold">Contact Phone *</label>
+                  <input 
+                    type="tel"
+                    id="con-phone"
+                    placeholder="e.g. +91 98760 12345"
+                    class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl p-3 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                  />
+                </div>
+
+                <div class="flex flex-col space-y-1 sm:col-span-2">
+                  <label class="text-[10px] tracking-wider uppercase text-gold font-semibold">Email Address (Optional)</label>
+                  <input 
+                    type="email"
+                    id="con-email"
+                    placeholder="hello@gmail.com"
+                    class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl p-3 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                  />
+                </div>
+
+                <div class="flex flex-col space-y-1 sm:col-span-2">
+                  <label class="text-[10px] tracking-wider uppercase text-gold font-semibold">Subject Category</label>
+                  <select
+                    id="con-subject"
+                    class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl p-3 text-xs text-lavender-white/90 focus:outline-none focus:border-rose-pink font-light cursor-pointer"
+                  >
+                    <option value="General Enquiry">General Information</option>
+                    <option value="Custom Bridal Packages">Royal Bridal Package Consultation</option>
+                    <option value="Rescheduling Assistance">Rescheduling Help</option>
+                    <option value="Feedback / Suggestions">Feedbacks &amp; Reviews</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col space-y-1 sm:col-span-2">
+                  <label class="text-[10px] tracking-wider uppercase text-gold font-semibold">Your Message *</label>
+                  <textarea 
+                    id="con-msg"
+                    placeholder="How may our therapists assist you today?"
+                    rows="4"
+                    class="w-full bg-[#150a1a] border border-rose-pink/15 rounded-xl p-3 text-xs text-lavender-white focus:outline-none focus:border-rose-pink font-light"
+                  ></textarea>
+                </div>
+
+              </div>
+
+              <div class="pt-4 text-right">
+                <button
+                  id="submit-contact"
+                  class="px-6 py-3 rounded-full bg-rose-pink text-plum-black hover:bg-gold transition-colors text-xs font-sans font-bold tracking-widest uppercase flex items-center gap-2 transform hover:scale-105 ml-auto cursor-pointer"
+                >
+                  <span>Transmit Message</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Contact Coordinates -->
+          <div class="lg:col-span-5 flex flex-col space-y-6">
+            
+            <div class="glass-panel p-6 rounded-2xl border border-rose-pink/10 shadow-pink-glow space-y-4">
+              <h3 class="font-serif text-lg font-bold text-rose-pink">Sanctuary Details</h3>
+              
+              <div class="space-y-4 text-xs text-lavender-white/70">
+                <div class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[#d4a853] shrink-0 mt-0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>
+                    Velvet Bloom Salon, Bistupur Main Road, <br />
+                    Near Central Park, Jamshedpur – 831001
+                  </span>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-rose-pink shrink-0 mt-0.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <div>
+                    <a href="tel:+919876012345" class="hover:text-rose-pink font-semibold text-lavender-white block">
+                      +91 98760 12345
+                    </a>
+                    <span class="text-[10px] text-lavender-white/40 block mt-0.5">Complimentary call assistance allowed.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[#d4a853] shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <a href="mailto:hello@velvetbloom.in" class="hover:text-rose-pink text-lavender-white">
+                    hello@velvetbloom.in
+                  </a>
+                </div>
+
+                <div class="flex items-start gap-3 pt-2 border-t border-rose-pink/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-rose-pink shrink-0 mt-0.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <div>
+                    <p class="font-semibold text-lavender-white">Mon–Sat: <span class="text-gold">9:00 AM – 8:00 PM</span></p>
+                    <p class="font-semibold text-lavender-white mt-0.5">Sun: <span class="text-[#ffeaba]">10:00 AM – 6:00 PM</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Custom GPS pin vector representation -->
+            <div class="glass-panel aspect-[4/3] rounded-2xl border border-rose-pink/10 relative overflow-hidden bg-purple-black flex flex-col items-center justify-center text-center p-6 shadow-md shadow-pink-glow">
+              <div class="absolute inset-0 bg-rose-pink/3 rounded-full filter blur-xl pointer-events-none" />
+
+              <div class="w-16 h-16 rounded-full border border-gold/20 flex items-center justify-center bg-gold/5 relative mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold w-8 h-8 animate-spin" style="animation-duration: 40s"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                <div class="absolute w-2 h-2 rounded-full bg-rose-pink" />
+              </div>
+
+              <div class="space-y-1 relative z-10 max-w-xs mx-auto">
+                <span class="text-[10px] tracking-widest text-[#ffeaba] font-medium uppercase">Map Navigation Placeholder</span>
+                <p class="font-serif text-base font-bold text-lavender-white">Bistupur Main Road, Jamshedpur</p>
+                <p class="text-[9.5px] text-lavender-white/50 leading-relaxed font-light">
+                  Find our landmark immediately opposite Central Park. Parking spaces are protected &amp; secured.
+                </p>
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-[8px] text-lavender-white/30 uppercase tracking-widest font-mono">
+                <span>LAT: 22.7981° N</span>
+                <span>LON: 86.1950° E</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FAQ ACCORDION SECTION -->
+      <section class="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-8">
+        
+        <div class="text-center mb-12 flex flex-col items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold animate-bounce mb-2 w-8 h-8"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-lavender-white">Frequently Asked Answers</h2>
+          <div class="w-12 h-0.5 bg-rose-pink mt-1 opacity-50" />
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="faq-row rounded-xl border border-rose-pink/10 bg-[#140c19] overflow-hidden transition-all duration-300 shadow-sm">
+            <button class="faq-hdr w-full flex items-center justify-between p-4 text-left hover:bg-rose-pink/5 pointer-events-auto">
+              <span class="font-serif text-xs sm:text-sm font-semibold text-lavender-white pr-4">Is there any waiting time if I book online?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" class="text-gold w-4 h-4"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-body p-4 bg-plum-black/40 border-t border-rose-pink/5 text-xs text-lavender-white/80 leading-relaxed font-light hidden animate-fade-in">
+              Absolutely zero! Velvet Bloom Jamshedpur runs strictly on synchronized appointment blocks. If you lock your slot for 10:30 AM, your stylist is completely reserved for you directly upon arrival.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-row rounded-xl border border-rose-pink/10 bg-[#140c19] overflow-hidden transition-all duration-300 shadow-sm">
+            <button class="faq-hdr w-full flex items-center justify-between p-4 text-left hover:bg-rose-pink/5 pointer-events-auto">
+              <span class="font-serif text-xs sm:text-sm font-semibold text-lavender-white pr-4">Can I book custom bridal consultations at Bistupur?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" class="text-gold w-4 h-4"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-body p-4 bg-plum-black/40 border-t border-rose-pink/5 text-xs text-lavender-white/80 leading-relaxed font-light hidden animate-fade-in">
+              Yes, our royal bridal rooms are entirely private. Fill out the contact form selecting "Royal Bridal Co consultation", and our elite bridal styling desk will reserve an unhurried look testing session.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-row rounded-xl border border-rose-pink/10 bg-[#140c19] overflow-hidden transition-all duration-300 shadow-sm">
+            <button class="faq-hdr w-full flex items-center justify-between p-4 text-left hover:bg-rose-pink/5 pointer-events-auto">
+              <span class="font-serif text-xs sm:text-sm font-semibold text-lavender-white pr-4">What organic cosmetic brands do you utilize?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" class="text-gold w-4 h-4"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-body p-4 bg-plum-black/40 border-t border-rose-pink/5 text-xs text-lavender-white/80 leading-relaxed font-light hidden animate-fade-in">
+              We exclusively utilize international luxury products—ranging from Kérastase lipid hair boosters to clinically purified hyaluronic acids and 24K pure botanical gold leaf masques.
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer SECTION -->
+    <footer class="bg-[#0b050d] border-t border-rose-pink/10 pt-16 pb-12 text-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" />
+            </svg>
+            <span class="font-serif text-lg font-bold text-lavender-white tracking-widest">VELVET BLOOM</span>
+          </div>
+          <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+            Step into Bistupur’s preeminent sanctuary for modern women. Experience unhurried hair transformations, flawless nail couture, bio-active facial masques, and high bridal elegance in private comfort slots.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Explore Rituals</h4>
+          <ul class="space-y-2 text-xs text-lavender-white/70 font-light">
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Signature Hair Coloring</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Luxury Gel Nail Art</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Organic Glowing Facials</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Bridal Grooming Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Timeless Slots</h4>
+          <div class="text-xs text-lavender-white/70 space-y-1.5 font-light">
+            <p>Monday – Saturday: <span class="text-rose-pink">9:00 AM – 8:00 PM</span></p>
+            <p>Sunday Special: <span class="text-rose-pink">10:00 AM – 6:00 PM</span></p>
+            <p class="text-[10px] text-lavender-white/40 italic">Appointments hold guaranteed priority over walk-ins.</p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">HQ Address</h4>
+          <div class="text-xs text-lavender-white/70 space-y-2 font-light">
+            <p>Velvet Bloom Salon, Bistupur Main Road, Near Central Park, Jamshedpur – 831001</p>
+            <p class="hover:text-rose-pink transition-colors"><a href="tel:+919876012345">Call Support: +91 98760 12345</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-rose-pink/5 text-center text-xs text-lavender-white/40 font-light flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>&copy; 2026 Velvet Bloom Salon. Designed with pristine precision.</p>
+        <div class="flex items-center space-x-6 text-[10px] uppercase tracking-wider">
+          <span>Exclusive ladies lounge</span>
+          <span>•</span>
+          <span>Premium Bistupur, Jamshedpur</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/animations.js" type="module"></script>
+
+    <!-- Custom accordion and contact submission handler -->
+    <script type="module">
+      // HTML contact page validations
+      const nameInp = document.getElementById('con-name');
+      const phoneInp = document.getElementById('con-phone');
+      const emailInp = document.getElementById('con-email');
+      const subSelect = document.getElementById('con-subject');
+      const msgInp = document.getElementById('con-msg');
+
+      const submitBtn = document.getElementById('submit-contact');
+      const resetBtn = document.getElementById('reset-form-btn');
+      const errBanner = document.getElementById('contact-error');
+      const errText = document.getElementById('contact-error-text');
+
+      const formWrap = document.getElementById('contact-form');
+      const successWrap = document.getElementById('contact-success');
+
+      if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+          if (errBanner) errBanner.classList.add('hidden');
+
+          const nameVal = nameInp ? nameInp.value.trim() : '';
+          const phoneVal = phoneInp ? phoneInp.value.trim() : '';
+          const emailVal = emailInp ? emailInp.value.trim() : '';
+          const subVal = subSelect ? subSelect.value : '';
+          const msgVal = msgInp ? msgInp.value.trim() : '';
+
+          if (!nameVal) {
+            showFormError('Please enter your name.');
+            return;
+          }
+          if (!phoneVal) {
+            showFormError('Please enter your contact number.');
+            return;
+          }
+          if (!msgVal) {
+            showFormError('Please write your message to the desk.');
+            return;
+          }
+
+          // Populate success message
+          document.getElementById('success-patron-name').textContent = nameVal;
+          document.getElementById('success-subject').textContent = subVal;
+
+          if (formWrap) formWrap.classList.add('hidden');
+          if (successWrap) {
+            successWrap.classList.remove('hidden');
+            successWrap.classList.add('animate-scale-up');
+          }
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          location.reload();
+        });
+      }
+
+      function showFormError(msg) {
+        if (errBanner && errText) {
+          errText.textContent = msg;
+          errBanner.classList.remove('hidden');
+        }
+      }
+
+      // FAQs Accordion Row selectors
+      const faqRows = document.querySelectorAll('.faq-row');
+      faqRows.forEach(row => {
+        const header = row.querySelector('.faq-hdr');
+        const body = row.querySelector('.faq-body');
+        const arrow = header.querySelector('svg');
+
+        header.addEventListener('click', () => {
+          const isCurrentlyHidden = body.classList.contains('hidden');
+          
+          // Collapse all others
+          document.querySelectorAll('.faq-row').forEach(r => {
+            const b = r.querySelector('.faq-body');
+            const h = r.querySelector('.faq-hdr');
+            const a = h.querySelector('svg');
+            
+            b.classList.add('hidden');
+            b.style.opacity = '0';
+            a.style.transform = 'rotate(0deg)';
+          });
+
+          if (isCurrentlyHidden) {
+            body.classList.remove('hidden');
+            setTimeout(() => {
+              body.style.opacity = '1';
+            }, 50);
+            arrow.style.transform = 'rotate(180deg)';
+          } else {
+            body.classList.add('hidden');
+            body.style.opacity = '0';
+            arrow.style.transform = 'rotate(0deg)';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

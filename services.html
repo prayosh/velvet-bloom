@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Luxury Services | Velvet Bloom Salon Jamshedpur</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..905&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-plum-black text-lavender-white font-sans overflow-x-hidden selection:bg-rose-pink selection:text-plum-black min-h-screen flex flex-col justify-between">
+    
+    <!-- Translucent Glass Navigation Bar -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        <!-- Logo Container -->
+        <a href="index.html" class="flex items-center space-x-3 group cursor-pointer">
+          <div class="p-1 px-1.5 rounded-full border border-rose-pink/15 group-hover:border-rose-pink/40 bg-purple-black/40 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" class="group-hover:rotate-45 transition-transform duration-700">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" opacity="0.85"/>
+              <path d="M50 35C48 45 40 48 40 55C40 62 48 68 50 75C52 68 60 62 60 55C60 48 52 45 50 35Z" fill="#d4a853" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-lg sm:text-xl font-bold tracking-widest text-[#ffeaba] leading-tight">VELVET BLOOM</span>
+            <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.2em] text-rose-pink -mt-0.5">Bistupur Jamshedpur</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+          <a href="index.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Home</a>
+          <a href="services.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Services</a>
+          <a href="gallery.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Gallery</a>
+          <a href="booking.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Schedule</a>
+          <a href="contact.html" class="nav-link text-lavender-white/75 hover:text-rose-pink transition-colors">Inquire</a>
+        </nav>
+
+        <!-- Right Action Button & Hamburger Toggle -->
+        <div class="flex items-center space-x-4">
+          <a href="booking.html" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-rose-pink text-plum-black hover:bg-gold hover:text-plum-black text-[10px] font-bold tracking-widest uppercase shadow-md transition-all duration-300">
+            Book Session
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" class="md:hidden p-2 text-lavender-white/80 hover:text-rose-pink focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu-drawer" class="fixed inset-0 bg-plum-black/98 z-40 flex flex-col justify-center items-center space-y-8 text-center translate-y-[-100%] transition-transform duration-500 ease-in-out md:hidden">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-lavender-white/60 hover:text-rose-pink cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <a href="index.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Home</a>
+        <a href="services.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Services</a>
+        <a href="gallery.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Gallery</a>
+        <a href="booking.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Book Slot</a>
+        <a href="contact.html" class="text-2xl font-serif text-[#ffeaba] hover:text-rose-pink transition-colors tracking-widest lowercase py-1">Get in Touch</a>
+
+        <a href="booking.html" class="px-8 py-3 bg-rose-pink text-plum-black font-extrabold text-xs uppercase tracking-widest rounded-full shadow-pink-glow mt-4">
+          Quick Schedule
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENT BODY wrapper -->
+    <main class="flex-grow pt-24 sm:pt-28 pb-16">
+      
+      <!-- HERO BANNER -->
+      <section class="relative py-12 px-4 sm:px-6 lg:px-8 text-center bg-gradient-to-b from-purple-black to-plum-black border-b border-rose-pink/10 mb-12">
+        <div class="absolute right-0 top-0 w-64 h-64 bg-rose-pink/5 rounded-full filter blur-[80px] pointer-events-none" />
+        <div class="max-w-4xl mx-auto flex flex-col items-center space-y-4">
+          <h1 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-lavender-white">
+            Curated <span class="text-rose-pink">Therapies &amp; Rituals</span>
+          </h1>
+          <div class="w-16 h-0.5 bg-rose-pink opacity-50" />
+          <p class="text-xs sm:text-sm text-lavender-white/70 max-w-lg font-light">
+            Each ritual is designed for maximum feminine refreshment. We use premium certified organic brands to treat your beauty assets.
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVICES LAYOUT PANEL -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Interactive Category Toggles -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12" id="filter-wrapper">
+          <button data-filter="all" class="filter-btn px-5 py-2 rounded-full border border-rose-pink bg-rose-pink text-plum-black font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            All Rituals
+          </button>
+          <button data-filter="hair" class="filter-btn px-5 py-2 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Hair
+          </button>
+          <button data-filter="nail" class="filter-btn px-5 py-2 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Nail
+          </button>
+          <button data-filter="facial" class="filter-btn px-5 py-2 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Facial
+          </button>
+          <button data-filter="bridal" class="filter-btn px-5 py-2 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300">
+            Bridal Shringar
+          </button>
+        </div>
+
+        <!-- Grid Cards of services -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="services-cards-grid">
+          
+          <!-- Card 1: Hair -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="hair">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Hair care</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">Signature French Balayage</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                Custom paint technique performed by color masters. Achieve seamless gradient blonde, caramel, or cherry wine accents. Includes hydration care.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 150 Min</span>
+                <span>•</span>
+                <span>👤 Master Preeti</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹3,500</span>
+              <a href="booking.html?service=hair-balayage" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Hair -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="hair">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Hair care</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">Kérastase Deep Nourishing Spa</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                Premium multi-molecular Kérastase lipid infusion to repair heat-damaged shafts, and restore blinding smoothness and bounce.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 90 Min</span>
+                <span>•</span>
+                <span>👤 Certified Staff</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹2,200</span>
+              <a href="booking.html?service=hair-spa" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Nail -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="nail">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Nail Art</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">Premium Gel Extension &amp; Art</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                Form-fitted high resilience French acrylic or soft Gel extension with options for handcrafted custom line-drawing art, rhinestones, or flakes.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 75 Min</span>
+                <span>•</span>
+                <span>👤 Master Swati</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹1,500</span>
+              <a href="booking.html?service=nail-gel" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Nail -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="nail">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Nail Art</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">Luxury Chrome Nail Overlay</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                High-contrast premium chrome powder burnished over dark gel base. Captures hypnotic glossy light reflection effects.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 60 Min</span>
+                <span>•</span>
+                <span>👤 Nail Desk</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹1,200</span>
+              <a href="booking.html?service=nail-chrome" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Facial -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="facial">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Facial therapy</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">24K Bio-Active Botanical Facial</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                Intense cellular nourishment treatment using 24-carat pure gold leaf solutions paired with certified lavender, chamomile, and active cucumber extracts.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 90 Min</span>
+                <span>•</span>
+                <span>👤 Skin Desk</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹2,800</span>
+              <a href="booking.html?service=facial-gold" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6: Facial -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="facial">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Facial therapy</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">Advanced Oxygen Hydro-Facial</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                Deep hydration jet scaling which infuses pure oxygenated hyaluronic serums deep into pores. Unveils instantaneous glassy glow.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 75 Min</span>
+                <span>•</span>
+                <span>👤 Certified Skin Expert</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹3,200</span>
+              <a href="booking.html?service=facial-hydra" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 7: Bridal -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="bridal">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Bridal Shringar</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">Royal Indian Shringar Packing</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                Our legacy bridal package. Includes custom high-definition makeup, elite hair bun couture with fresh roses, saree draping, and hands jewelry styling.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 300 Min</span>
+                <span>•</span>
+                <span>👤 Dedicated Lounge Room</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹15,000</span>
+              <a href="booking.html?service=bridal-royal" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 8: Bridal -->
+          <div class="service-card glass-panel p-6 rounded-2xl border border-rose-pink/10 hover:border-rose-pink/35 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between" data-category="bridal">
+            <div class="space-y-3">
+              <span class="text-[9px] text-[#ffeaba] uppercase tracking-widest font-bold tracking-widest">Bridal Shringar</span>
+              <h3 class="font-serif text-lg font-bold text-lavender-white">Luxury Bridesmaid Glow Kit</h3>
+              <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+                Tailored bridal sister or bridesmaid package. Features natural soft glow airbrush foundation, quick-style curls, and professional dupatta pin-ups.
+              </p>
+              <div class="py-1 flex items-center gap-4 text-[10px] text-lavender-white/40 uppercase tracking-widest font-mono">
+                <span>⏱️ 180 Min</span>
+                <span>•</span>
+                <span>👤 Professional Team</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-rose-pink/5 flex items-center justify-between">
+              <span class="text-lg font-serif font-black text-rose-pink">₹6,500</span>
+              <a href="booking.html?service=bridal-party" class="px-5 py-2 rounded-full bg-rose-pink/15 text-rose-pink hover:bg-rose-pink hover:text-plum-black text-[10px] font-bold tracking-widest uppercase transition-all duration-200">
+                Book Slot
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer SECTION -->
+    <footer class="bg-[#0b050d] border-t border-rose-pink/10 pt-16 pb-12 text-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+              <path d="M50 20C45 35 30 40 30 50C30 65 45 75 50 85C55 75 70 65 70 50C70 40 55 35 50 20Z" fill="#e8a0bf" />
+            </svg>
+            <span class="font-serif text-lg font-bold text-lavender-white tracking-widest">VELVET BLOOM</span>
+          </div>
+          <p class="text-xs text-lavender-white/60 leading-relaxed font-light">
+            Step into Bistupur’s preeminent sanctuary for modern women. Experience unhurried hair transformations, flawless nail couture, bio-active facial masques, and high bridal elegance in private comfort slots.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Explore Rituals</h4>
+          <ul class="space-y-2 text-xs text-lavender-white/70 font-light">
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Signature Hair Coloring</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Luxury Gel Nail Art</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Organic Glowing Facials</a></li>
+            <li><a href="services.html" class="hover:text-rose-pink transition-colors">Bridal Grooming Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">Timeless Slots</h4>
+          <div class="text-xs text-lavender-white/70 space-y-1.5 font-light">
+            <p>Monday – Saturday: <span class="text-rose-pink">9:00 AM – 8:00 PM</span></p>
+            <p>Sunday Special: <span class="text-rose-pink">10:00 AM – 6:00 PM</span></p>
+            <p class="text-[10px] text-lavender-white/40 italic">Appointments hold guaranteed priority over walk-ins.</p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-sm font-semibold text-gold tracking-wide">HQ Address</h4>
+          <div class="text-xs text-lavender-white/70 space-y-2 font-light">
+            <p>Velvet Bloom Salon, Bistupur Main Road, Near Central Park, Jamshedpur – 831001</p>
+            <p class="hover:text-rose-pink transition-colors"><a href="tel:+919876012345">Call Support: +91 98760 12345</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-rose-pink/5 text-center text-xs text-lavender-white/40 font-light flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>&copy; 2026 Velvet Bloom Salon. Designed with pristine precision.</p>
+        <div class="flex items-center space-x-6 text-[10px] uppercase tracking-wider">
+          <span>Exclusive ladies lounge</span>
+          <span>•</span>
+          <span>Premium Bistupur, Jamshedpur</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/animations.js" type="module"></script>
+
+    <!-- Custom inline filtering script for Services dynamic categorization -->
+    <script type="module">
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.service-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active style classes
+          filterButtons.forEach(b => {
+            b.className = 'filter-btn px-5 py-2 rounded-full border border-rose-pink/20 hover:border-rose-pink hover:bg-rose-pink/5 text-lavender-white/80 font-semibold text-xs tracking-wider uppercase transition-all duration-300';
+          });
+          btn.className = 'filter-btn px-5 py-2 rounded-full border border-rose-pink bg-rose-pink text-plum-black font-semibold text-xs tracking-wider uppercase transition-all duration-300';
+
+          const filterCategory = btn.getAttribute('data-filter');
+
+          // Filter card transitions
+          cards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (filterCategory === 'all' || cardCat === filterCategory) {
+              card.style.display = 'flex';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(10px)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 200);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
